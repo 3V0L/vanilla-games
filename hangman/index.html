@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css"/>
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Title -->
+        <title>Vanilla Games - Hangman</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hangman</h1>
+            <a href="../index.html"><h5>Back to Home</h5></a>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="image0" id="game-image"></div>
+                </div >
+                <div class="col-md-4">
+                    <h4 class="text-heading">Try Guess The Country Below</h4>
+                    <br/>
+                    <h2 class="text-content letters" id="expected-word"></h2>
+                </div>
+                <div class="col-md-4 guessed-letters">
+                    <h4 class="text-heading">Guessed Letters</h4>
+                    <br/>
+                    <h2 class="text-content letters" id="used-letters"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 game-controls">
+                    <h6 class="text-heading">Enter A Letter:</h6>
+                    <input type="text" id="text-box">
+                </div>
+            </div>
+            <div class="col-md-4 game-controls">
+                <button type="button" class="btn btn-danger" id="reset-btn">Reset Game</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>
